@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Laporan Praktikum - Pendaftaran</title>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="index.html">Beranda</a> | 
+        <a href="pendaftaran.html">Pendaftaran</a>
+    </nav>
+
+    <hr>
+
+    <!-- Judul -->
+    <h2>Form Pendaftaran Praktikan</h2>
+
+    <!-- Formulir -->
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td>1. Nama Lengkap</td>
+                <td>: <input type="text" name="nama"    ></td>
+            </tr>
+            <tr>
+                <td>2. Password</td>
+                <td>: <input type="password" name="pass" required></td>
+            </tr>
+            <tr>
+                <td>3. NIM</td>
+                <td>: <input type="number" name="nim" required></td>
+            </tr>
+            <tr>
+                <td>4. Tanggal Lahir</td>
+                <td>: <input type="date" name="tgl"required></td>
+            </tr>
+            <tr>
+                <td>5. Jenis Kelamin</td>
+                <td>: 
+                    <input type="radio" id="laki" name="jk" value="L"> <label for="laki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="jk" value="P"> <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>6. Minat bidang</td>
+                <td>: 
+                    <input type="checkbox" name="minat" value="web"> Web
+                    <input type="checkbox" name="minat" value="network"> Jaringan
+                    <input type="checkbox" name="minat" value="design"> Design/Modeling
+                </td>
+            </tr>
+            <tr>
+                <td>7. Program Studi</td>
+                <td>: 
+                    <select name="prodi">
+                        <option value="IF">S1 Teknik Informatika</option>
+                        <option value="SI">S1 Sistem Informasi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>8. Alasan Mendaftar</td>
+                <td>: <textarea name="alasan" rows="3" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>: 
+                    <input type="submit" value="Kirim">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
